@@ -1,0 +1,23 @@
+{
+ 	"manifest_version": 2,
+ 	"name": "Lintar Febriyanto",
+ 	"version": "1.0",
+	"description": "",
+	"icons": {
+		"16": "images/icon.png"
+	},
+	"permissions": [
+		"bookmarks",
+		"tabs",
+		"history",
+		"storage",
+		"notifications"
+	],
+	"background": {
+		"scripts": ["scripts/background.js"],
+		"persistent": false
+	},
+  	"chrome_url_overrides" : {
+    	"newtab": "index.html"
+  	}
+}

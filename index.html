@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello :) | Lintr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="styles/bs.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework7.bundle.css">
+    <link rel="stylesheet" href="styles/framework7.icons.css" class="href">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+ 
+</head>
+<body>
+<div id="app" class="theme-dark">        
+
+    <div class="page" data-name="home">        
+        <div class="page-content">
+          <div class="panel panel-left  panel-left-1 panel-cover panel-init">
+            <div class="page">          
+              <div class="block" style="margin-top: 10px !important;margin-bottom: 10px !important;">
+
+                <div class="row">    
+                  <div class="col-5"><a class="panel-close text-left" href="#"><h4><i class="fas fa-times"></i></h4></a></div>
+                  <div class="col-50"><h4>History</h4></div>
+                 
+                </div>
+
+              </div>
+            
+              <div class="block no-margin" style="margin-top:20px !important">
+                <div class="searchbar-backdrop"></div>
+                <form class="searchbar" id="pencarian">
+                  <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                      <input type="search" placeholder="Search" id="inPencarian">
+                      <i class="searchbar-icon"></i>
+                      <!-- <span class="input-clear-button"></span> -->
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                  </div>
+                </form>
+
+              </div>
+              
+              <div class="page-content">
+                <div class="block"  id="link-history"  style="margin-bottom: 200px;">
+
+                </div>
+              </div>
+             
+            </div>
+          </div>
+    
+          <div class="panel panel-right panel-right-1 panel-cover panel-init">
+            <div class="page">
+              <div class="block" style="margin-top: 10px !important;margin-bottom: 10px !important;">
+                <div class="row">
+                  <!-- Each "cell" has col-[width in percents] class -->
+                  <div class="col-50">
+                    <h4>Bookmarks</h4>
+                  </div>
+                  <div class="col-10">
+                    <a class="panel-close text-right" href="#"><h4><i class="fas fa-times"></i></h4></a>
+                  </div>
+                </div>
+                
+                
+                
+              </div>
+
+              <div class="page-content">
+                
+                <div class="list contacts-list">
+                  <div class="list-group">
+                    <ul id='bookmarks' style="margin-bottom: 150px;">
+                    </ul>
+                  </div>
+                </div>
+
+
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row no-gap">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left">                  
+                      <a class="link panel-open" href="#" data-panel=".panel-left-1">
+                        <i class="fas fa-bars " style="font-size: 30px;"></i></i>
+                      </a>                  
+                  </div>
+                  <div class="title"> <h1 id='sambutan' style="font-size: 30px;"> Hai, Lintar </h1></div>
+                  <div class="right">
+                    <a class="link panel-open" href="#" data-panel=".panel-right-1"><h1><i class="fas fa-bars" style="font-size: 30px;"></i></h1></i></a>
+                  </div>
+                </div>
+              
+              </div>
+           
+          </div>
+              
+              
+          <div class="row">
+            <div class="col-100  medium-25">
+              <div class="block-title">Tanggal</div>
+              <!-- <div id="demo-calendar-inline-container"></div> -->
+              <div class="block">
+                  <div class="row">
+                    <div class='col text-center'><button class="button button-outline color-blue" id='tgl'></button></div>
+                    <div class='col text-center'><button class="button button-outline color-blue" id='bln'></button></div>
+                    <div class='col text-center'><button class="button button-outline color-blue" id='thn'></button></div>
+                  </div>   
+              </div>
+              <div class="block" style="text-align: center;">
+                <button class="button button-outline color-blue" style="height: 100%;"><h1><div id='jam'></div></h1></button>
+              </div>
+
+              <div class="block">
+                <div class="card card-outline" style="margin: 0 !important;">
+                  <div class="card-content card-content-padding" id='quote'>
+                    
+                  </div>
+                </div>
+                <h4 id="author" style="text-align:center"></h4>
+              </div>
+              
+              <div class="block">
+                <!-- <div class="title-block"><a class='link '>Hitungan Mundur</a></div> -->
+
+                <div class="card card-outline" style="margin: 0 !important;">
+                  <div class="card-content card-content-padding">
+                    
+                    <h1 id="detik-c" style="width: 100%; text-align: center; font-size: 60px;margin: 0;">0</h1>
+                    
+                  </div>
+                
+                </div>
+                
+                <div class="row">
+                  <div class="col">
+                    <input type="number" id='waktu' value="60" style="width: 100%;padding-top: 10px;border-bottom: 1px solid white;height: 45px;
+                    font-size: 25px;">
+                    <!-- <input type="checkbox" id="i"> Ulangi -->
+
+                  </div>
+                  <div class="col">
+                    <button class='button button-fill color-blue' style="margin-top:10px" id="mulai-c">Mulai</button>
+                  </div>
+                </div> 
+                    
+              </div>
+                      
+
+            </div>
+
+            <div class="col-100  medium-50">
+              <div class="block">
+                <div class="block-title">Kegiatan hari ini  </div>
+                <div class="block no-padding">
+                  <div class="row">
+                    <div class="col-50">
+                      <a href="#" class='button button-fill sheet-open' data-sheet=".my-sheet">+ Tambah Kegiatan</a>
+                    </div>
+                    <div class="col-50">
+                       <a href="#" class='button button-fill color-green' id='kegiatan-selesai'>Kegiatan Selesai</a>
+                       <a href="#" class='button button-fill color-red' style="display: none;" id='kegiatan-proses'>Kegiatan Proses</a>
+
+                    </div>
+                  </div>
+                    
+                    <div class="timeline" id="timeline" style="padding: 0 !important;">
+                    
+                    </div>
+                    <div class="col-30">
+                      <!-- <button class="button" id="simpan_kegiatan1">Simpan Kegiatan</button> -->
+                    </div>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-100  medium-25">
+                    <div class="block-title">Catatan</div>
+                    
+                      <div class="block ">
+                        <div class="row">
+                          <button class="button button-fill  sheet-open" data-sheet=".mo-catatan">Buat Catatan</button>
+                        </div>
+
+                      </div>
+
+                      <div id="catatan-ku">
+
+                      </div>
+                      <!-- <button class="button">Simpan Catatan</button> -->
+
+
+            </div>
+          </div>
+
+                
+          <div class="sheet-modal sheet-modal-bottom my-sheet ">
+                <div class="toolbar toolbar-bottom">
+                  <div class="toolbar-inner">
+                    <div class="left"></div>
+                    <div class="right"><a class=" button color-red sheet-close" id="simpan_kegiatan" href="#">Simpan</a></div>
+                  </div>
+                </div>
+                <div class="sheet-modal-inner">
+                  <div class="block">
+                    <h4>Input Kegiatan</h4>
+                    <p>
+                      <textarea placeholder="Kegiatan Input disini" id="inkegiatan" class="resizable" style="width: 100%;border-bottom: 1px solid gray;"></textarea>
+                   
+                    </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="sheet-modal sheet-modal-bottom mo-catatan ">
+                <div class="toolbar toolbar-bottom">
+                  <div class="toolbar-inner">
+                    <div class="left"></div>
+                    <div class="right"><a class=" button color-red sheet-close" id="simpan_catatan" href="#">Simpan</a></div>
+                  </div>
+                </div>
+                <div class="sheet-modal-inner">
+                  <div class="block">
+                    <h4>Input Catatan</h4>
+                    <p>
+                      <textarea placeholder="Catatan Input disini" id="inCatatan" class="resizable" style="width: 100%;border-bottom: 1px solid gray;"></textarea>
+                   
+                    </p>
+                  </div>
+                </div>
+          </div>
+          
+          <div class="sheet-modal sheet-modal-bottom my-alrm ">
+            <div class="toolbar toolbar-bottom">
+              <div class="toolbar-inner">
+                <div class="left"></div>
+                <div class="right"><a class=" button color-red sheet-close" id="simpan_kegiatan" href="#">Simpan</a></div>
+              </div>
+            </div>
+            <div class="sheet-modal-inner">
+              <div class="block">
+                <div>
+                 <h4>Detik : </h4><input type="text" id='menitnya' value="60" style="border-bottom: 1px solid white;width:100%">
+                </div>
+                
+                <p>
+                  <h4>Catatan</h4>
+                </p>
+                <p>
+                  <textarea placeholder="Catatan" id="inalrm" style="width: 100%;border-bottom: 1px solid gray;"></textarea>
+               
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+           
+                
+    </div>
+
+</div>
+    
+<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="scripts/framework7.bundle.js"></script>
+<script src="scripts/momentjs.js"></script>
+<script src="scripts/axios.js"></script>
+<script type="text/javascript" src="scripts/background.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

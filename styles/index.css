@@ -1,0 +1,71 @@
+body {
+    font-family: 'Crete Round', serif;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.calendar.calendar-inline {
+    border: 3px solid #54a0ff;
+    border-radius: 27px;
+    margin-top: 15px;
+    /* box-shadow: 3px 3px 1px 1px #48dbfb; */
+}
+
+
+.md .contacts-list li:not(.list-group-title) {
+    padding-left: 15px !important;
+}
+a.link.external {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    text-align: left;
+    padding-bottom: 10px;
+    justify-content: left;
+}
+
+.timeline-item-content {
+    width: 100%;
+}
+
+.detele-timeline{
+    
+    position: absolute !important;
+    right: 10px;
+    margin: 6px;
+    color: red;
+}
+.detele-timeline:hover{
+    cursor: pointer;
+
+}
+.success-timeline:hover{
+    cursor: pointer;
+
+}
+
+.success-timeline{
+    
+    position: absolute !important;
+    right: 30px;
+    margin: 6px;
+    color: #337ab7;
+}
+
+.item-content.bg-primary {
+    padding: 0 !important;
+}
+
+a.link.external {
+    color: #acd7f1;
+    padding-top: 10px;
+}
+
+.detele-catatan{
+    color: red;
+}
+
+.detele-catatan:hover{
+    cursor: pointer;
+
+}
